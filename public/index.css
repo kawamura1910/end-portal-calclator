@@ -1,0 +1,43 @@
+body {
+    line-height: 1.7;
+    color: #222;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-top: 1rem;
+}
+
+h1,
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.page {
+    display: grid;
+    gap: 5rem;
+    max-width: 40rem;
+    margin: 5rem auto;
+    padding: 0 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.3rem;
+    padding: 0.7rem;
+    border: 1px solid #dadada;
+    line-height: 1;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    color: #bebebe;
+    font-size: 0.8rem;
+}

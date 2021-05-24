@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>エンドポータルの座標を計算するツール</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@2.0.2/destyle.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+            type="text/css"
+        />
+        <link rel="stylesheet" href="index.css" />
+
+        <script defer src="index.js"></script>
+    </head>
+    <body class="page">
+        <header>
+            <h1>エンドポータルの座標を計算するツール</h1>
+        </header>
+        <section>
+            <h2>使い方</h2>
+            <ol>
+                <li>
+                    適当な場所でエンダーアイをなげる。このとき、飛んだエンダーアイにプレイヤーの視点をかさねる。
+                </li>
+                <li>
+                    デバッグ画面をひらいて「プレイヤーの x 座標」 「プレイヤーの z
+                    座標」「プレイヤーの向いている方角（＝エンダーアイが飛んだ方角）」を確認して、このサイトへ入力する。
+                </li>
+                <li>以上の作業を 200 ブロックほど離れた場所で再度おこなう。</li>
+                <li>すべての入力欄を入力しおえたら、エンドポータルの座標が算出される。</li>
+            </ol>
+        </section>
+        <section>
+            <h2>入力欄</h2>
+            <form class="main-form row">
+                <fieldset class="col-sm-6 col-xs-12">
+                    <legend class="form-legend">1 か所目</legend>
+                    <div class="form-group">
+                        <label for="x1">x 座標</label>
+                        <input id="x1" type="number" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="z1">z 座標</label>
+                        <input id="z1" type="number" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="a1">エンダーアイが飛んだ方角</label>
+                        <input id="a1" type="number" required />
+                    </div>
+                </fieldset>
+                <fieldset class="col-sm-6 col-xs-12">
+                    <legend class="form-legend">2 か所目</legend>
+                    <div class="form-group">
+                        <label for="x2">x 座標</label>
+                        <input id="x2" type="number" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="z2">z 座標</label>
+                        <input id="z2" type="number" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="a2">エンダーアイが飛んだ方角</label>
+                        <input id="a2" type="number" required />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>計算結果</h2>
+            <p class="result-x">x 座標:</p>
+            <p class="result-z">z 座標:</p>
+        </section>
+    </body>
+</html>

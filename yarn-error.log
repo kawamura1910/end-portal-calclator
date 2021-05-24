@@ -1,0 +1,38 @@
+Arguments: 
+  /home/nami/.nvm/versions/node/v14.16.1/bin/node /home/nami/.nvm/versions/node/v14.16.1/bin/yarn add prettier eslint eslint-config-plugin -D
+
+PATH: 
+  /home/nami/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/bin:/home/nami/.nvm/versions/node/v14.16.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/nami/AppData/Local/Microsoft/WindowsApps:/snap/bin:/home/nami/.yarn/bin:/home/nami/.yarn/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/eslint-config-plugin: Not found
+      at Request.params.callback [as _callback] (/home/nami/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/home/nami/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/home/nami/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/home/nami/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+      "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
